@@ -1,2 +1,2 @@
 <?php include("header.php"); ?>
-<h1>Toodete nimekiri</h1>
+<h1>Admin leht</h1>
