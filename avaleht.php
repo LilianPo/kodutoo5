@@ -18,14 +18,14 @@ if (isset($_GET["page"])) {
     $page = $_GET["page"];
     if ($page =="tooted") {
         include("tooted.php");
-    } else if ($page=="contakt") {
-        include("contakt.php");
+    } else if ($page=="kontakt") {
+        include("kontakt.php");
     }
 }else{
     # code...
 
 ?>
-<div class="container-fluid my-class" style="background-color:#FFE0DF;">
+<div class="jumbotron jumbotron-fluid" style="background-color:#FFE0DF;">
 <div class="container">
     <div class="row flex-lg-row-reverse align-items-center py-5">
       <div class="col-10 col-sm-8 col-lg-6">
@@ -42,9 +42,33 @@ if (isset($_GET["page"])) {
     </div>
   </div>
   </div>
-  <div class="container">
-  <div class="d-flex justify-content-center">
-  <h2>Parimad pakkumised</h2>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+  <h3 class="pb-1 text-center fs-1">Parimad pakkumised</h3>
+  <div class="row row-cols-1 row-cols-md-4 g-4 pt-5">
+<?php
+    $products = "products.csv";
+    $minu_csv = fopen($products, "r");
+
+    while (!feof($minu_csv)) {
+        $rida = fgetcsv($minu_csv, filesize($products), ",");
+        if (is_array($rida)) {
+            echo '
+            <div class="col">
+                <div class="card">
+                    <img src="pildid/'.$rida[3].'" class="card-img-top" alt="'.$rida[1].'">
+                    <div class="card-body">
+                    <h5 class="card-title">'.$rida[1].'</h5>
+                    <p class="card-text">'.$rida[2].'€</p>
+                    </div>
+                </div>
+            </div>
+            ';
+            }
+        }
+    fclose($minu_csv);
+?>
+    </div>
   </div>
   </div>
 <?php

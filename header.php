@@ -20,8 +20,9 @@
 
     <body>
     <div class="conteiner">
-    <nav class="navbar navbar-expand-sm" style="background-color:#FFE0DF;">
-      <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background-color:#FFE0DF;">
+    <nav class="navbar navbar-expand-sm">
+      <div class="container">
         <nav class="navbar">
         <a class="navbar-brand" href="#">LilianPorovart.com</a>
         </nav>
@@ -41,7 +42,7 @@
               <a class="nav-link active" aria-current="page" href="kontakt.php">Kontakt</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Admin</a>
+              <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
             </li>
             <li class="nav-item"> 
                 <a class="navbar-brand" href="#"><img 
@@ -49,8 +50,9 @@
                     alt="Ostukorv" width="30" 
                     height="30"> 
                 </a> 
-                </li> 
+                </li>
           </ul>
         </div>
+      </div>
       </div>
   </nav>
