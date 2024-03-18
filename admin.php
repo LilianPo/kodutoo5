@@ -1,5 +1,4 @@
 <?php include("header.php"); ?>
-<h1>Admin leht</h1>
 <?php
 if (isset($_GET['ok'])) {
     echo '<div class="alert alert-success" role="alert">
@@ -7,6 +6,9 @@ if (isset($_GET['ok'])) {
   </div>';
 }
 ?>
+<div class= "jumbotron-fluid">
+    <div class="container">
+<h1>Admin leht</h1>
 <form action="" method="post" enctypr="multipart/form-data">
 <div class="form-group col-md-6">
     <label for="nimetus">Toote nimetus:</label>
@@ -26,9 +28,10 @@ if (isset($_GET['ok'])) {
 </form>
 <form action="" method="post" enctypr="multipart/form-data">
     <div class="form-group col-md-6">
-
     </div>
 </form>
+</div>
+</div>
 <?php
 if (isset($_POST['nimetus'])) {
 
@@ -49,4 +52,7 @@ if (isset($_POST['nimetus'])) {
     fclose($fp);
     header('Location:avaleht.php?page=services&ok');
 }
+?>
+<?php
+
 ?>

@@ -9,6 +9,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script data-name="TokenSigning" data-by="Web-eID extension"
     src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script>
+    <link rel="stylesheet" href="button.css">
 </head>
 <body>
 
@@ -25,6 +26,7 @@ if (isset($_GET["page"])) {
     # code...
 
 ?>
+
 <div class="jumbotron jumbotron-fluid" style="background-color:#FFE0DF;">
 <div class="container">
     <div class="row flex-lg-row-reverse align-items-center py-5">
@@ -37,7 +39,7 @@ if (isset($_GET["page"])) {
         <p class="lead">
           Soodustus kehtib vaid sel nädalavahetusel!
         </p>
-            <button type="button" class="btn btn-danger btn-rounded">Vaata pakkumisi</button>
+        <button class="button button1">Vaata pakkumisi →</button>
       </div>
     </div>
   </div>
