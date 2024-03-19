@@ -45,7 +45,7 @@
               <a class="nav-link active" aria-current="page" href="admin.php">Admin</a>
             </li>
             <li class="nav-item"> 
-                <a class="navbar-brand" href="#"><img 
+                <a class="navbar-brand" href="ostukorv.php"><img 
                     src="https://d3sxshmncs10te.cloudfront.net/icon/premium/png-512/1182642.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkM3N4c2htbmNzMTB0ZS5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTcxMDg2ODM0MCwicSI6bnVsbCwiaWF0IjoxNzEwNjA5MTQwfQ__.e3aa4fc58c81f07f01b3b43ad25f282f1c8534c9bbdfdac915ac2cd00cc87a57" 
                     alt="Ostukorv" width="30" 
                     height="30"> 

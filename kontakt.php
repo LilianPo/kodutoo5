@@ -1,6 +1,8 @@
 <?php include("header.php"); ?>
-<body>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
 <h1>Kontaktid</h1>
 <p>Hetkel kontakt andmed puuduvad</p>
-</body>
+</div>
+</div>
 <?php include("footer.php"); ?>
