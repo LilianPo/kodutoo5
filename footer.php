@@ -1,6 +1,6 @@
 </div>
 <div class="bg-info text-center text-lg-start fixed-bottom">
-<div class="conteiner p-2" style="background-color:black;">
+<div class="conteiner myfooter" style="background-color:black;">
     <div class="jumbotron jumbotron-fluid text-center text-light">
 <p>LilianPorovart</p>
 </div>

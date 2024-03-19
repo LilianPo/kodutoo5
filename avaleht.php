@@ -9,7 +9,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script data-name="TokenSigning" data-by="Web-eID extension"
     src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -28,7 +28,7 @@ if (isset($_GET["page"])) {
 ?>
 
 <div class="jumbotron jumbotron-fluid" style="background-color:#FFE0DF;">
-<div class="container">
+<div class="container mycontainer">
     <div class="row flex-lg-row-reverse align-items-center py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src="pilt.png" class="d-block mx-lg-auto img-fluid" alt="Jalgpall" width="600" height="400"
@@ -45,7 +45,7 @@ if (isset($_GET["page"])) {
   </div>
   </div>
   <div class="jumbotron jumbotron-fluid">
-    <div class="container">
+    <div class="container mycontainer">
   <h3 class="pb-1 text-center fs-1">Parimad pakkumised</h3>
   <div class="row row-cols-1 row-cols-md-4 g-4 pt-5">
 <?php

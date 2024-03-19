@@ -19,7 +19,7 @@
     </head>
 
     <body>
-    <div class="conteiner">
+    <div>
     <div class="jumbotron jumbotron-fluid" style="background-color:#FFE0DF;">
     <nav class="navbar navbar-expand-sm">
       <div class="container">

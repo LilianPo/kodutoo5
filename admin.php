@@ -1,3 +1,16 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BootstrapLP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script data-name="TokenSigning" data-by="Web-eID extension"
+    src="chrome-extension://ncibgoaomkmdpilpocfeponihegamlic/token-signing-page-script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <?php include("header.php"); ?>
 <?php
 if (isset($_GET['ok'])) {
@@ -81,10 +94,9 @@ $minu_csv = fopen($products, "r");
         echo '<th scope="row">' . $rida[0] . '</th>';
         echo '<td>' . $rida[1] . '</td>';
         echo '<td>' . $rida[2] . '€</td>';
-        echo '<td><li class="button"> 
+        echo '<td>
         <a href="delete_row.php?id='.$rida[0].'"><img src="Prügikast.png" alt="Kustuta" width="30" height="30">
-        </a> 
-        </li>';
+        </a>';
         echo '</tr>';
     }
 }
@@ -97,3 +109,16 @@ $minu_csv = fopen($products, "r");
     fclose($minu_csv);
 ?>
 <?php include("footer.php"); ?>
+<script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

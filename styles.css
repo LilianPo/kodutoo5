@@ -10,3 +10,11 @@
     margin: 5px;
   }
   .button1 {border-radius: 30px;}
+
+  div.mycontainer {
+    margin-bottom: 100px;
+  }
+  div.myfooter {
+    height: 50px;
+    background-color: black;
+  }
